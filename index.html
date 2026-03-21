@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nordiere — Jovan Milosevic</title>
+<meta name="description" content="Nordiere is a software company run by Jovan Milosevic.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #f8f6f3;
+    --text: #1a1a1a;
+    --text-secondary: #6b6560;
+    --accent: #c4643a;
+    --rule: #d8d3cc;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 520px;
+    width: 100%;
+  }
+
+  .brand {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin-bottom: 2rem;
+  }
+
+  .bio {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: var(--text);
+    margin-bottom: 2.5rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .links a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 2rem; }
+    .tagline { font-size: 1rem; }
+    body { padding: 1.5rem; align-items: flex-start; padding-top: 3rem; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <p class="brand">Nordiere</p>
+    <h1>Jovan Milosevic</h1>
+    <p class="tagline">Software engineer working with AI.</p>
+    <hr>
+    <p class="bio">
+      Been writing software for 25 years, from inventing client-side performance techniques back in Web 2.0 days to shipping enterprise systems at Microsoft. Now working on my own projects with AI.
+    </p>
+    <div class="links">
+      <a href="mailto:jovan@nordiere.com">jovan@nordiere.com</a>
+      <a href="https://www.linkedin.com/in/jovanmilosevic/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </main>
+</body>
+</html>
